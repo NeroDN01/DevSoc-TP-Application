@@ -1,0 +1,49 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: "Lucida Console", monospace;
+  text-align: center;
+  padding-top: 300px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.day-mode { background-color: #FFD93D; color: #000000; }
+body.night-mode { background-color: #2C1A47; color: #FFFFFF; }
+
+button {
+  font-size: 1rem;
+  padding: 8px 16px;
+  margin: 5px;
+  border: 1;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#mode-toggle-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+.nav-buttons {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.nav-btn.active { font-weight: bold; text-decoration: bold; }
+.hide { display: none; }
+
+#clock-display, #timer-display { font-size: 7rem; margin: 20px 0; }
+
+#timer-minutes-input {
+  font-size: 1rem;
+  padding: 5px;
+  width: 80px;
+  margin-bottom: 15px; 
+}
