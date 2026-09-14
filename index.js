@@ -20,7 +20,6 @@ timerNavBtn.addEventListener('click', () => {
   clockNavBtn.classList.remove('active');
 });
 
-// ----- Clock -----
 function updateClock() {
   const now = new Date();
   const h = String(now.getHours()).padStart(2, '0');
