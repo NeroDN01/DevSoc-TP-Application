@@ -38,6 +38,7 @@ const minutesInput = document.getElementById('timer-minutes-input');
 const startBtn = document.getElementById('start-btn');
 const pauseBtn = document.getElementById('pause-btn');
 const resetBtn = document.getElementById('reset-btn');
+const themeColorMeta = document.getElementById('theme-color-meta');
 
 let timerInterval = null;
 let secondsLeft = 0;
@@ -90,8 +91,10 @@ modeToggleBtn.addEventListener('click', () => {
   if (isNight) {
     faviconLink.setAttribute('href', 'Images/night.png');
     modeToggleBtn.textContent = '☀️';
+    themeColorMeta.setAttribute('content', '#2C1A47'); 
   } else {
     faviconLink.setAttribute('href', 'Images/sun.png');
     modeToggleBtn.textContent = '🌙';
+    themeColorMeta.setAttribute('content', '#FFD93D'); 
   }
 });
